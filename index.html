@@ -1,0 +1,213 @@
+<!DOTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>포트폴리오</title>
+        
+        <!-- style -->
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+    <div id="wrap">       
+        <header id="header" class="clearfix">
+            <h1><a href="#"><img src="images/logo01.jpg" alt="portfolio"></a></h1>           
+            <div class="nav">
+            <ul class="clearfix">
+                <li><a href="#">ABOUT</a>
+                    <ul class="submenu"> 
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Certificate</a></li>
+                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">MBTI</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">DESIGN</a>
+                    <ul class="submenu"> 
+                        <li><a href="#">Poster</a></li>
+                        <li><a href="file:///Users/3-2T/Desktop/%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9%202/index.html#">Graphic</a></li>
+                        <li><a href="#">Card news</a></li>
+                        <li><a href="#">Application</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">VIDEO</a>
+                    <ul class="submenu"> 
+                        <li><a href="#">Contest</a></li>
+                        <li><a href="#">Parody</a></li>
+                        <li><a href="#">Advertisting</a></li>
+                    </ul>
+                </li>      
+                <li><a href="#">CONNECT</a></li>
+            </ul>
+            </div>
+        </header>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- header -->
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <img src="images/banner01.jpg" alt="아트워크">
+                </div>
+                <div class="slideImg">
+                    <img src="images/banner02.jpg" alt="페이커">
+                </div>
+                <div class="slideImg">
+                    <img src="images/banner03.jpg" alt="서울우유 레트로 병">
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- banner -->
+        <section id="contents">
+            <img src="images/content01.jpg" alt="명언">
+        
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- contents -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section id="mockup" class="clearfix">    
+        <div class="best clearfix">
+            <figure>
+                <img src="images/01.jpg" alt="방과후 교실">
+                <figcaption> 방과후 교실 </figcaption>
+            </figure>
+            <figure>
+                <img src="images/02.jpg" alt="방과후 교실">
+                <figcaption> V 그래픽디자인</figcaption>
+            </figure>
+            <figure>
+                <img src="images/03.jpg" alt="방과후 교실">
+                <figcaption> 마한 문화제 포스터 </figcaption>
+            </figure>
+        </div>
+        <div class="best clearfix">
+            <figure>
+                <img src="images/04.jpg" alt="방과후 교실">
+                <figcaption> Faker 카드뉴스</figcaption>
+            </figure>
+            <figure>
+                <img src="images/05.jpg" alt="방과후 교실">
+                <figcaption> 당근마켓 플렉서블 </figcaption>
+            </figure>
+            <figure>
+                <img src="images/06.jpg" alt="방과후 교실">
+                <figcaption> 서울우유 인트로페이지</figcaption>
+            </figure>
+        </div>
+        <div class="best clearfix">
+            <figure>
+                <img src="images/07.jpg" alt="방과후 교실">
+                <figcaption> BT21 이벤트페이지</figcaption>
+            </figure>
+            <figure>
+                <img src="images/08.jpg" alt="방과후 교실">
+                <figcaption> Fantast 아트워크 </figcaption>
+            </figure>
+            <figure>
+                <img src="images/09.jpg" alt="방과후 교실">
+                <figcaption> 아디다스 슈퍼스타W </figcaption>
+            </figure>
+        </div>
+        </section>     
+        
+        <!-- contents -->
+        
+        
+        <footer id="footer" class="clearfix">
+            <h2><img src="images/logo02.png" alt="로고"></h2>
+            <div class="foot">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                </ul>
+                <address>
+                    조유정 (학교)한강미디어고등학교<br>
+                    주소: 서울시 강서구 강서로47다길 10-18<br>
+                </address>
+                
+                
+                
+                
+            </div>
+        </footer>
+        <!-- footer -->
+        
+        
+    </div>
+    
+    <!-- script -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script>
+        //네비게이션
+        $(".nav > ul > li").mouseover(function(){
+            $(this).find(".submenu").stop().slideDown(200);    
+        });
+        $(".nav > ul > li").mouseout(function(){
+            $(this).find(".submenu").stop().slideUp(200);    
+        });
+        
+        //이미지 슬라이드(좌우)
+        var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else{
+                currentIndex = 0;
+            }
+            var slidePosition =currentIndex * (-1000)+"px";
+            $(".slideList").animate({ left:slidePosition },400);
+        },3000);
+        
+    
+    </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
